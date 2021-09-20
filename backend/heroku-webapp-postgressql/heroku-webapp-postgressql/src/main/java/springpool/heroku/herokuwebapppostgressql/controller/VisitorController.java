@@ -21,7 +21,7 @@ import springpool.heroku.herokuwebapppostgressql.repository.VisitorRepository;
 import springpool.heroku.herokuwebapppostgressql.exception.ResourceNotFoundException;
 
 
-@CrossOrigin(origins = "../frontend/react-front/")
+@CrossOrigin(origins = "../frontend")
 @RestController
 @RequestMapping("/api/v1/")
 public class VisitorController {

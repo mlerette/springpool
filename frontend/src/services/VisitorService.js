@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const VISITOR_API_BASE_URL = "http://localhost:8080/api/v1/visitors";
+const VISITOR_API_BASE_URL = "http://springpool.herokuapp.com";
 
 class VisitorService {
 
