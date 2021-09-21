@@ -1,7 +1,7 @@
 {
   "scripts": {
     "frontend": "cd frontend && npm start",
-    "backend": "cd backend && java $JAVA_OPTS -cp target/classes:target/dependency/* com.heroku-webapp-postgressql",
+    "backend": "cd backend && java $JAVA_OPTS -cp target/classes:target/dependency/* com.heroku-webapp-postgressql.HerokuWebappPostgressqlApplication",
     "dev": "concurrently --kill-others-on-fail \"npm run backend\" \"npm run frontend\"",
     "heroku-postbuild": "cd frontend &&  npm run build"
   },
