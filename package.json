@@ -3,6 +3,12 @@
     "frontend": "cd frontend && npm start",
     "backend": "cd backend && java $JAVA_OPTS -cp target/classes:target/dependency/* com.heroku-webapp-postgressql",
     "dev": "concurrently --kill-others-on-fail \"npm run backend\" \"npm run frontend\"",
-    "heroku-postbuild": "cd frontend && npm install && npm run build"
+    "heroku-postbuild": "cd frontend &&  npm run build"
+  },
+  "dependencies": {
+    "dom": "0.0.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3"
   }
 }
