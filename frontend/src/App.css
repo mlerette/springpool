@@ -37,10 +37,6 @@
   }
 }
 
-
-
-
-
 .header-welcome{
   
   height: 100px;
@@ -69,7 +65,6 @@
   text-transform: uppercase;
   text-decoration: solid;
   font-size: xxx-large;
-  
 
 }
 
@@ -88,6 +83,10 @@ text-align: center;
 margin-top: 8%;
 }
 
+.logTableHeader {
+background-color: black;
+
+}
 
 
 .footer {

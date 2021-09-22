@@ -13,7 +13,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
 	<artifactId>heroku-webapp-postgressql</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>heroku-webapp-postgressql</name>
-	<description>Demo project for Spring Boot</description>
+	<description>SpringPool Web App</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -50,5 +50,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
 			<artifactId>tomcat-jdbc</artifactId>
 		</dependency>
 	</dependencies>
+
+</project>
 
 	

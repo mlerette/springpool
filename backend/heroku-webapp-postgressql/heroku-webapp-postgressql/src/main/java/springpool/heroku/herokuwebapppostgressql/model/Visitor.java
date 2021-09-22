@@ -25,8 +25,9 @@ public class Visitor {
 	
 	@Column(name = "message")
 	private String message;
-	
-	
+
+	@Column(name = "likes")
+	private int likes;
 	
 	public Visitor() {
 		super();
@@ -34,11 +35,12 @@ public class Visitor {
 	}
 	
 	
-	public Visitor(String firstName, String lastName, String message) {
+	public Visitor(String firstName, String lastName, String message, int likes) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.message = message;
+		this.likes = likes;
 	}
 
 
@@ -66,6 +68,11 @@ public class Visitor {
 	public void setMessage(String message) {
 		this.message = message;
 	} 
-	
-	
+	public int getLikes() {
+		return likes;
+	}
+	public void setLikes(int likes) {
+		this.likes = likes;
+	}
+
 }

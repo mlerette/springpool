@@ -21,37 +21,47 @@ class ListVisitorComponent extends Component {
     render() {
         return (
             <div className = "theLogTable">
-                <h2 className="text-center">List of Visitors</h2> 
+                <div className = "logTableHeader">
+                <h2 className="text-center">Kritter: Send a Kreet to Kreeto</h2> 
+                    <h3 className="text-center">Leave Messages to Help Kreeto on their Journey!</h3>
+                    </div>
             <div className = "row">
-                    <table className = "table table-striped table-bordered">
+                 <table className = "table table-striped table-bordered">
 
+                    <div className = "kritterHead">
                         <thead>
+                            {
 
-                            <tr>
-                            <th>Visitor First Name</th>
-                            <th>Visitor Last Name</th>
-                            <th>Visitor Message</th>
-                            <th>Actions</th>
-                            </tr>
-
+                        this.state.visitors.map(
+                                    visitor => 
+                                    <th key = {visitor.id}>
+                                <th>{visitor.firstName}</th>
+                                <th>{visitor.lastName}</th>
+                            </th>
+                        )
+                            }
+                            
                         </thead>
+                        </div>
 
+                    <div className="kritterBody">
                         <tbody>
                             {
                                 this.state.visitors.map(
                                     visitor => 
                                     <tr key = {visitor.id}>
-                                        <td> {visitor.firstName} </td>
-                                        <td> {visitor.lastName} </td>
                                         <td> {visitor.message} </td>
+                                        <td> {visitor.likes} </td>
                                     </tr>
                                 )
                             }
 
                         </tbody>
+                    </div>
 
 
-                    </table>
+                </table>
+                    
             </div>
 
             </div>

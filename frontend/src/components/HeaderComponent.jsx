@@ -24,15 +24,16 @@ class HeaderComponent extends Component {
                             </div>
                                 
                             <div>
-                                    <a className="headerTitle">Matt's Webapp v2 9/18/21</a>   
+                                    <p className="headerTitle">Kreeto-Verse</p> 
+                                    <p1 className="headerIntro">Kreeto is a purple alien forever wandering the empty spaces of its universe...</p1>  
                             </div> 
                             
                         </div>
                              <div className="subHeader">
-                                    <h1>buttons buttons buttons</h1>
+                                    <h1>Button = Post, Button = Create User Profile</h1> 
                              </div>   
                              <div className="welcomeMess">
-                                     <h2>Hello, thank you for visiting, please sign the visitor log below to see if it works!</h2>
+                                     <h2>We are working on Kritter so you can send Kreeto messages!</h2>
                                      <h3>-matt</h3>     
                             </div>    
 
