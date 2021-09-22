@@ -51,6 +51,30 @@
 			<artifactId>tomcat-jdbc</artifactId>
 		</dependency>
 	</dependencies>
+	
+	<build>
+        <plugins>
+           
+            <plugin>
+                <groupId>com.heroku.sdk</groupId>
+                <artifactId>heroku-maven-plugin</artifactId>
+                <version>3.0.4</version>
+				
+                <configuration>
+                    <appName>springpool.heroku</appName>
+                    <includeTarget>false</includeTarget>
+                    <includes>
+                        <include>${com.heroku-webapp-postgressql}/${com.heroku-webapp-postgressql.HerokuWebappPostgressqlApplication}.jar</include>
+                    </includes>
+                    <jdkVersion>1.8</jdkVersion>
+                    <processTypes>
+                        <web>java $JAVA_OPTS -jar
+                            ${com.heroku-webapp-postgressql}/${com.heroku-webapp-postgressql.HerokuWebappPostgressqlApplication}.jar</web>
+                    </processTypes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     
 
