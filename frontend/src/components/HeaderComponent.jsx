@@ -22,12 +22,11 @@ class HeaderComponent extends Component {
                             <div className="alienHeader">
                                    <img src="/images/AlienHeader1.png"  width="100" height="100"alt="Alien"/>
                             </div>
-                                
-                            <div>
-                                    <p className="headerTitle">Kreeto-Verse</p> 
-                                    <p1 className="headerIntro">Kreeto is a purple alien forever wandering the empty spaces of its universe...</p1>  
-                            </div> 
+
+                                    <p className="headerTitle">Kreeto-Verse</p>   
+                                    <p className="headerIntro">Kreeto is a purple alien forever wandering the empty spaces of its universe...</p>       
                             
+                        
                         </div>
                              <div className="subHeader">
                                 <button id="myBtn">Post</button> 

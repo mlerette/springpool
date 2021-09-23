@@ -44,7 +44,7 @@
   width: 100%;
   text-align: center;
   background: linear-gradient(170deg, #41bbdd 80%, #958797 40%);
-  
+  ;
 }
 
 .header-welcome> div{display: inline-block;}
@@ -60,16 +60,16 @@
 }
 
 .headerTitle {
-  color:black;
-  font-family:'Courier New', Courier, monospace;
+  
   text-transform: uppercase;
   text-decoration: solid;
   font-size: xxx-large;
 
 }
 
+
 .subHeader{
-  text-align: right;
+  text-align: left;
   font-size: xx-large;
 }
 
