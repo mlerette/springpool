@@ -9,7 +9,6 @@
 		<version>2.5.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-
     <groupId>springpool.heroku</groupId>
 	<artifactId>heroku-webapp-postgressql</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -27,7 +26,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
@@ -51,7 +49,6 @@
 			<artifactId>tomcat-jdbc</artifactId>
 		</dependency>
 	</dependencies>
-
     <build>
         <plugins>
             <plugin>

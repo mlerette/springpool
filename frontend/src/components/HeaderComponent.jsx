@@ -30,7 +30,8 @@ class HeaderComponent extends Component {
                             
                         </div>
                              <div className="subHeader">
-                                    <h1>Button = Post, Button = Create User Profile</h1> 
+                                <button id="myBtn">Post</button> 
+                               
                              </div>   
                              <div className="welcomeMess">
                                      <h2>We are working on Kritter so you can send Kreeto messages!</h2>
