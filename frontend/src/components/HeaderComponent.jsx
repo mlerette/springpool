@@ -34,7 +34,7 @@ class HeaderComponent extends Component {
                                
                              </div>   
                              <div className="welcomeMess">
-                                     <h2>We are working on Kritter so you can send Kreeto messages!</h2>
+                                     <h2>I am working on Kritter so you can send Kreeto messages!</h2>
                                      <h3>-matt</h3>     
                             </div>    
 

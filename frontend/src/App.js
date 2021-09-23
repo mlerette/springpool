@@ -8,6 +8,8 @@ import FooterComponent from './components/FooterComponent';
 
 
 function App() {
+
+  
   return (
     <div>
        <Router> 
@@ -24,7 +26,9 @@ function App() {
              
       </Router>
     </div>
+    
   );
+  
 }
 
 export default App;
