@@ -1,10 +1,9 @@
 {
   "scripts": {
-    "start": "serve -s build",
     "dev": "react-script start", 
     "frontend": "cd frontend && npm install && npm build",
     "backend": "cd backend && java $JAVA_OPTS -cp target/classes:target/dependency/* com.heroku-webapp-postgressql.HerokuWebappPostgressqlApplication",
-    "heroku-postbuild": "cd frontend &&  npm run build"
+    
   },
   "dependencies": {
     "dom": "0.0.3",
