@@ -31,12 +31,12 @@ class ListVisitorComponent extends Component {
                         <thead>
                             {
 
-                        this.state.visitors.map(
+                                this.state.visitors.map(
                                     visitor => 
-                                    <th key = {visitor.id}>
-                                <th>{visitor.firstName}</th>
-                                <th>{visitor.lastName}</th>
-                            </th>
+                                    <tr key = {visitor.id}>
+                                <td>{visitor.firstName}</td>
+                                <td>{visitor.lastName}</td>
+                                    </tr>
                         )
                             }
                             
