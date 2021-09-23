@@ -19,38 +19,27 @@ class ListVisitorComponent extends Component {
     }
 
     render() {
+
+
+        var visitors = this.state.visitors.map((value, index) => (
+            <OneElement key={visitor.id} firstName={visitor.firstName} lastName={visitor.lastName}  likes={visitor.likes} />
+         ));
+
         return (
-            <div className = "theLogTable">
-                <div className = "logTableHeader">
-                <h2 className="text-center">Kritter: Send a Kreet to Kreeto</h2> 
-                    <h3 className="text-center">Leave Messages to Help Kreeto on their Journey!</h3>
-                    </div>
-            <div className = "row">
-                 <table className = "table table-striped table-bordered">
-    
-                        
-                     <div className="kritterBody">
-                        <tbody>
-                            {
-                                this.state.visitors.map(
-                                    visitor => 
-                                    <tr key = {visitor.id}>
-                                        <td> {visitor.firstName} </td>
-                                        <td> {visitor.lastName} </td>
-                                        <td> {visitor.message} </td>
-                                        <td> {visitor.likes} </td>
-                                    </tr>
-                                )
-                            }
-
-                        </tbody>
-                    </div>
-                   
-                </table>
-                    
-            </div>
-
-            </div>
+            <div>
+            <h1>Visitors</h1>
+            <table id="visitors">
+                <tr>
+                    <th>visitors</th>
+                    <th>messages</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tbody>
+                   {visitors}
+                </tbody>
+            </table>
+        </div>
         );
     }
 }
