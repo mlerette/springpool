@@ -28,25 +28,15 @@ class ListVisitorComponent extends Component {
             <div className = "row">
                  <table className = "table table-striped table-bordered">
     
-                        <thead>
-                            {
-
-                                this.state.visitors.map(
-                                    visitor => 
-                                    <tr key = {visitor.id}>
-                                <td>{visitor.firstName}</td>
-                                <td>{visitor.lastName}</td>
-                                    </tr>
-                        )
-                            }
-                            
-                        </thead>
                         
+                     <div className="kritterBody">
                         <tbody>
                             {
                                 this.state.visitors.map(
                                     visitor => 
                                     <tr key = {visitor.id}>
+                                        <td> {visitor.firstName} </td>
+                                        <td> {visitor.lastName} </td>
                                         <td> {visitor.message} </td>
                                         <td> {visitor.likes} </td>
                                     </tr>
@@ -54,6 +44,7 @@ class ListVisitorComponent extends Component {
                             }
 
                         </tbody>
+                    </div>
                    
                 </table>
                     
