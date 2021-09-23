@@ -27,8 +27,7 @@ class ListVisitorComponent extends Component {
                     </div>
             <div className = "row">
                  <table className = "table table-striped table-bordered">
-
-                    <div className = "kritterHead">
+    
                         <thead>
                             {
 
@@ -42,9 +41,7 @@ class ListVisitorComponent extends Component {
                             }
                             
                         </thead>
-                        </div>
-
-                    <div className="kritterBody">
+                        
                         <tbody>
                             {
                                 this.state.visitors.map(
@@ -57,9 +54,7 @@ class ListVisitorComponent extends Component {
                             }
 
                         </tbody>
-                    </div>
-
-
+                   
                 </table>
                     
             </div>
