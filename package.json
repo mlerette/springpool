@@ -1,8 +1,9 @@
 {
   "scripts": {
+    "start": "serve -s build",
+    "dev": "react-script start", 
     "frontend": "cd frontend && npm install && npm build",
     "backend": "cd backend && java $JAVA_OPTS -cp target/classes:target/dependency/* com.heroku-webapp-postgressql.HerokuWebappPostgressqlApplication",
-    "dev": "concurrently --kill-others-on-fail \"npm run backend\" \"npm run frontend\"",
     "heroku-postbuild": "cd frontend &&  npm run build"
   },
   "dependencies": {
@@ -15,5 +16,5 @@
     "type": "git",
     "url": "https://github.com/mlerette/springpool"
   }
-  
+ 
 }
